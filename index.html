@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #output {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #generateBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        h1{
+          color: #BA2842;
+          font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>sanimX bet</h1>
+    <div id="output">Click the button to Play</div>
+    <h2>choose your number </h2>
+    <button id="generateBtn" onclick="generateRandomNumber()">1</button>
+ <button id="generateBtn" onclick="generateRandomNumber()">2</button> <button id="generateBtn" onclick="generateRandomNumber()">3</button> <button id="generateBtn" onclick="generateRandomNumber()">4</button> <button id="generateBtn" onclick="generateRandomNumber()">5</button> <button id="generateBtn" onclick="generateRandomNumber()">6</button>
+  <button id="generateBtn" onclick="generateRandomNumber()">7</button>
+   <button id="generateBtn" onclick="generateRandomNumber()">8</button>
+    <button id="generateBtn" onclick="generateRandomNumber()">9</button>
+     <button id="generateBtn" onclick="generateRandomNumber()">10</button>
+    <script>
+        function generateRandomNumber() {
+            // Generate a random number between 1 and 100
+            var randomNumber = Math.floor(Math.random() * 10) + 1;
+
+            // Display the random number
+            document.getElementById('output').textContent = 'winning number : ' + randomNumber;
+        }
+    </script>
+</body>
+</html>
